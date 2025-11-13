@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Portfolio | Al Aman</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <meta name="description" content="Portfolio of Al Aman showcasing web development projects and design work.">
+  <meta name="keywords" content="portfolio, web developer, HTML, CSS, JavaScript, Bootstrap, projects">
 
   <!-- Favicons -->
   <link rel="icon" href="assets/img/my icon.jpg">
@@ -15,7 +15,7 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,13 +27,23 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 05 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Custom Fix for Alignment -->
+  <style>
+    /* Make all portfolio images the same size and aligned */
+    .portfolio-content img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* Optional: Add a hover zoom effect */
+    .portfolio-content:hover {
+      transform: scale(1.03);
+      transition: transform 0.3s ease;
+    }
+  </style>
+
 </head>
 
 <body class="portfolio-page">
@@ -42,14 +52,12 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
         <h1 class="sitename">Projects</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html"  target="_self">Home</a></li>
+          <li><a href="index.html" target="_self">Home</a></li>
           <li><a href="about.html" target="_self">About</a></li>
           <li><a href="resume.html" target="_self">Resume</a></li>
           <li><a href="services.html" target="_self">Services</a></li>
@@ -88,62 +96,60 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-
       <div class="container">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter=".filter-app">Projects</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul>
+
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
+            <!-- Project 1 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/stackbuks.png" class="img-fluid" alt="" >
+                <img src="assets/img/portfolio/stackbuks.png" class="img-fluid" alt="Starbucks Clone">
                 <div class="portfolio-info">
                   <h4>Website 1</h4>
-                  <p>Clone of Starbucks </p>
+                  <p>Clone of Starbucks</p>
                   <a href="assets/img/portfolio/stackbuks.png" title="Project 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://al-aman-2006.github.io/Starbucks-clone/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div>
 
-        
-
+            <!-- Project 2 -->
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/BYD.png" class="img-fluid" alt="">
+                <img src="assets/img/BYD.png" class="img-fluid" alt="BYD Clone">
                 <div class="portfolio-info">
                   <h4>Website 2</h4>
-                  <p>Clone of 7UP </p>
-                  <a href="assets/img/BYD.png" title="project 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <p>Clone of BYD</p>
+                  <a href="assets/img/BYD.png" title="Project 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                   <a href="https://al-aman-2006.github.io/BYD-IN-clone/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
- 
-           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/rent.png" style="height: 230px; width: 400px;" class="img-fluid" alt="" >
+                <img src="assets/img/portfolio/Chemmath foods.jpg" class="img-fluid" alt="Chemmath Foods Website">
                 <div class="portfolio-info">
                   <h4>Website 3</h4>
-                  <p>District-7</p>
-                  <a href="assets/img/portfolio/rent.png" title="project 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="https://adnanpallikkal01-cmd.github.io/District-_7/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                  <p>Chemmath Foods</p>
+                  <a href="assets/img/portfolio/Chemmath foods.jpg" title="Project 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="https://al-aman-2006.github.io/Chemmath-Foods/" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
-            </div><!-- End Portfolio Item -->
-         
+            </div>
 
-           
           </div><!-- End Portfolio Container -->
 
         </div>
 
       </div>
-
     </section><!-- /Portfolio Section -->
 
   </main>
@@ -152,22 +158,17 @@
     <div class="container">
 
       <div class="social-links d-flex justify-content-center">
-            <a href="https://wa.me/ +919650802081"><i class="bi bi-whatsapp"></i></a>
-            <a href="https://www.facebook.com/share/1PWRgGKurD/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
-            <a href="https://www.instagram.com/aman.__aziz?igsh=a3M1NDNzeG5oaW1k&utm_source=qr"><i class="bi bi-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/aman-azeez-492404385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="bi bi-linkedin"></i></a>
-        
+        <a href="https://wa.me/919650802081"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.facebook.com/share/1PWRgGKurD/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/aman.__aziz?igsh=a3M1NDNzeG5oaW1k&utm_source=qr"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/aman-azeez-492404385?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="bi bi-linkedin"></i></a>
       </div>
-      </div>
+
       <div class="container">
         <div class="copyright">
           <span>Copyright</span> <strong class="px-1 sitename">Personal</strong> <span>All Rights Reserved</span>
         </div>
         <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you've purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
           Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
       </div>
@@ -196,5 +197,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-
 </html>
